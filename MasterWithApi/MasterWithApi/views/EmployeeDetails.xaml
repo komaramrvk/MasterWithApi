@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MasterWithApi.views.EmployeeDetails">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lbl_name" HorizontalOptions="Center"/>
+            <Label Text="Name:"/>
+            <Entry x:Name="entry_name" Placeholder="Enter Your name"/>
+            <Label Text="Salary:"/>
+            <Entry x:Name="entry_salary" Placeholder="Enter expected salary" Keyboard="Numeric" MaxLength="6"/>
+            <Label Text="Age:"/>
+            <Entry x:Name="entry_age" Placeholder="Enter your age" Keyboard="Numeric" MaxLength="2"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btn_update" Text="Update"/>
+                <Button x:Name="btn_delete" Text="Delete"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
