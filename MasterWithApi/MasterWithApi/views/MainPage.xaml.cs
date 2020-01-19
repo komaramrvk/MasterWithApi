@@ -18,6 +18,7 @@ namespace MasterWithApi
     public partial class MainPage : MasterDetailPage
     {
         List<MasterList> items= new List<MasterList>();
+        //program execution starts from here 
         public MainPage()
         {
             InitializeComponent();
